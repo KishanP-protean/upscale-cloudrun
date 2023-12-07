@@ -4,4 +4,6 @@ steps:
     args:
       - '-c'
       - 'ls -la'
-      - 'ls -ltrah && ./update_cloud_run.sh'
+      - 'ls -ltrah'
+      - 'chmod 777 ./cloudrun-rg-scaleup-min-max.sh'
+      - './cloudrun-rg-scaleup-min-max.sh'
