@@ -15,8 +15,10 @@ MIN_INSTANCES=1
 MAX_INSTANCES=2
 
 # Update the Cloud Run service
-gcloud run services update $SERVICE_NAME \
+#gcloud run services update $SERVICE_NAME \
   --project $PROJECT_ID \
   --region $LOCATION \
   --min-instances $MIN_INSTANCES \
   --max-instances $MAX_INSTANCES
+
+gcloud run services update $SERVICE_NAME --project $PROJECT_ID --region $LOCATION --min-instances $MIN_INSTANCES --max-instances $MAX_INSTANCES
