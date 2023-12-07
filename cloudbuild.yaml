@@ -5,5 +5,5 @@ steps:
       - '-c'
       - 'ls -la'
       - 'ls -ltrah'
-      - 'chmod 777 ./cloudrun-rg-scaleup-min-max.sh'
-      - './cloudrun-rg-scaleup-min-max.sh'
+      - 'chmod +x cloudrun-rg-scaleup-min-max.sh'
+      - 'sh -x ./cloudrun-rg-scaleup-min-max.sh'
